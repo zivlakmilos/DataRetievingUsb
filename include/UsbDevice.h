@@ -15,8 +15,12 @@ public:
     inline std::string getDevType(void) { return std::string(udev_device_get_devtype(m_dev)); }
     inline std::string getSysPath(void) { return std::string(udev_device_get_syspath(m_dev)); }
 
+    bool mount(const std::string &target);
+    bool umount(void);
+
 private:
     struct udev_device *m_dev;
+    std::string m_mountTarget;
 };
 
 #endif // _USB_DEVICE_H_
