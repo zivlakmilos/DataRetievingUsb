@@ -1,10 +1,10 @@
 #include <iostream>
 
+#include "Log.h"
 #include "Usb.h"
 
 int main(int argc, char *argv[])
 {
-
     Usb usb;
 
     std::vector<UsbDevice> deviceList = usb.getBlockDeviceList();

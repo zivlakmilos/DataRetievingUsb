@@ -11,8 +11,15 @@ pkg_check_modules(UDEV libudev REQUIRED IMPORTED_TARGET libudev)
 include_directories(include/)
 include_directories(${CMAKE_BINARY_DIR})
 include_directories(${PCLIBUDEV_INCLUDE_DIRS} ${PC_LIBUDEV_INCLUDEDIR})
+include_directories(lib/spdlog/include)
+
+# JSON Library
+set(JSON_BuildTests OFF CACHE INTERNAL "")
+add_subdirectory(lib/json)
 
 set(project_SRC
+    src/Settings.cpp
+    src/Log.cpp
     src/UsbDevice.cpp
     src/Usb.cpp
 
@@ -26,7 +33,7 @@ set(project_INCLUDE
 add_executable(dataretreiveusb ${project_SRC} ${project_INCLUDE})
 
 # Tell CMake to link the dataretreiveusb executable
-target_link_libraries(dataretreiveusb PkgConfig::UDEV)
+target_link_libraries(dataretreiveusb PkgConfig::UDEV nlohmann_json::nlohmann_json)
 
 # Install the executable
 install(TARGETS dataretreiveusb DESTINATION bin)
