@@ -8,7 +8,12 @@ Log::Log(void)
 {
     try
     {
-        m_logger = spdlog::basic_logger_mt("DataRetreiveUsbRpi", "DataRetreiveUsbRpi.log");
+        auto settings = Settings().jsonSettings()["Logging"];
+        std::string logName = settings["Name"];
+        std::string logFile = settings["File"];
+        //std::string logLevel = settings["Level"];
+
+        m_logger = spdlog::basic_logger_mt(logName, logFile);
         m_logger->set_level(spdlog::level::trace);
     }
     catch (...)

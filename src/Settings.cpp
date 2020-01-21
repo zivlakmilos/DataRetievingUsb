@@ -2,7 +2,8 @@
 
 #include <fstream>
 
-const char *Settings::s_settingsPath = "/ets/DataRetreiveUsb.conf";
+//const char *Settings::s_settingsPath = "/ets/DataRetreiveUsb.conf";
+const char *Settings::s_settingsPath = "DataRetreiveUsb.conf";
 
 Settings::Settings(void)
 {
@@ -10,8 +11,6 @@ Settings::Settings(void)
     iFile >> m_json;
 }
 
-json &Settings::settings(void)
+Settings::~Settings(void)
 {
-    static Settings settings;
-    return settings.jsonSettings();
 }
