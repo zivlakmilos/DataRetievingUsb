@@ -1,72 +1,119 @@
-#include <iostream>
+#include <chrono>
+#include <thread>
+
+#include <signal.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 #include "Log.h"
 #include "Settings.h"
 #include "Usb.h"
 #include "DataHandling.h"
 
-#include "influxdb/InfluxDB.h"
-#include "influxdb/InfluxDBFactory.h"
-#include "influxdb/Point.h"
+static void daemonize()
+{
+    pid_t pid;
+
+    /* Fork off the parent process */
+    pid = fork();
+
+    /* An error occurred */
+    if (pid < 0)
+        exit(EXIT_FAILURE);
+
+    /* Success: Let the parent terminate */
+    if (pid > 0)
+        exit(EXIT_SUCCESS);
+
+    /* On success: The child process becomes session leader */
+    if (setsid() < 0)
+        exit(EXIT_FAILURE);
+
+    /* Catch, ignore and handle signals */
+    //TODO: Implement a working signal handler */
+    signal(SIGCHLD, SIG_IGN);
+    signal(SIGHUP, SIG_IGN);
+
+    /* Fork off for the second time*/
+    pid = fork();
+
+    /* An error occurred */
+    if (pid < 0)
+        exit(EXIT_FAILURE);
+
+    /* Success: Let the parent terminate */
+    if (pid > 0)
+        exit(EXIT_SUCCESS);
+
+    /* Set new file permissions */
+    umask(0);
+
+    /* Change the working directory to the root directory */
+    /* or another appropriated directory */
+    chdir("/");
+
+    /* Close all open file descriptors */
+    int x;
+    for (x = sysconf(_SC_OPEN_MAX); x>=0; x--)
+    {
+        close (x);
+    }
+
+    /* Open the log file */
+    //openlog ("firstdaemon", LOG_PID, LOG_DAEMON);
+}
 
 int main(int argc, char *argv[])
 {
-    LOG_INFO("Start");
+    daemonize();
 
-    DataHandling dh("data/input");
-
-    if (dh.fileCopy())
-    {
-        std::cout << "Copy success" << std::endl;
-    }
-    else
-    {
-        std::cout << "Copy fail" << std::endl;
-    }
-
-    if (dh.uploadLocalFiles())
-    {
-        std::cout << "Upload success" << std::endl;
-    }
-    else
-    {
-        std::cout << "Upload fail" << std::endl;
-    }
-
-    return 0;
-
-    LOG_INFO("Test");
-
-    try
-    {
-        auto influxdb = influxdb::InfluxDBFactory::Get("http://us-west-2-1.aws.cloud2.influxdata.com/?u=vvv10265@zzrgg.com&p=vvv10265@zzrgg.com");
-        influxdb->write(influxdb::Point{"test"}
-            .addField("value", 10)
-            .addTag("host", "localhost")
-        );
-    } catch (...)
-    {
-        std::cout << "Eerror";
-    }
+    LOG_INFO("---------------------------------------------------------------");
+    LOG_INFO("Service start");
+    LOG_INFO("---------------------------------------------------------------");
 
     Usb usb;
 
-    std::vector<UsbDevice> deviceList = usb.getBlockDeviceList();
+    DataHandling dh("data/local");
+    dh.uploadLocalFiles();
 
-    for (auto device : deviceList)
+    while (1)
     {
-        if (device.getDevType() == "disk" || device.getDevNode().find("/dev/sda") != std::string::npos)
+        auto settings = Settings().jsonSettings();
+        std::string mountPoint = settings["Data"]["MountPoint"];
+
+        std::vector<UsbDevice> deviceList = usb.getBlockDeviceList();
+
+        DataHandling dh(mountPoint);
+
+        for (auto device : deviceList)
         {
-            continue;
+            if (device.getDevType() == "disk" || device.getDevNode().find("/dev/sda") != std::string::npos)
+            {
+                continue;
+            }
+
+            if (!device.mount(mountPoint))
+            {
+                LOG_WARN("Failed to mount device: {0}", device.getDevNode());
+                continue;
+            }
+
+            LOG_WARN("Device mounted: {0} -> {1}", device.getDevNode(), mountPoint);
+
+            dh.fileCopy();
+
+            device.umount();
         }
 
-        device.mount("/mnt");
-        device.umount();
+        dh.uploadLocalFiles();
 
-        std::cout << "DEVNODE: " << device.getDevNode() << std::endl
-                  << "DEVTYPE: " << device.getDevType() << std::endl
-                  << "SYSPATH: " << device.getSysPath() << std::endl << std::endl;
+        using namespace std::chrono_literals;
+        std::this_thread::sleep_for(250ms);
     }
+
+    LOG_INFO("---------------------------------------------------------------");
+    LOG_INFO("Service stop");
+    LOG_INFO("---------------------------------------------------------------");
 
     return 0;
 }

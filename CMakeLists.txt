@@ -13,6 +13,7 @@ find_package(InfluxDB REQUIRED)
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(UDEV libudev REQUIRED IMPORTED_TARGET libudev)
+pkg_check_modules(CURL libcurl REQUIRED IMPORTED_TARGET libcurl)
 
 include_directories(include/)
 include_directories(${CMAKE_BINARY_DIR})
@@ -40,7 +41,7 @@ set(project_INCLUDE
 add_executable(dataretreiveusb ${project_SRC} ${project_INCLUDE})
 
 # Tell CMake to link the dataretreiveusb executable
-target_link_libraries(dataretreiveusb PkgConfig::UDEV nlohmann_json::nlohmann_json InfluxData::InfluxDB)
+target_link_libraries(dataretreiveusb PkgConfig::UDEV PkgConfig::CURL nlohmann_json::nlohmann_json)
 
 # Install the executable
 install(TARGETS dataretreiveusb DESTINATION bin)

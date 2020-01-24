@@ -12,7 +12,7 @@ public:
     bool fileExists(void);
     bool fileCopy(void);
 
-    bool uploadLocalFiles(void);
+    void uploadLocalFiles(void);
 
 private:
     bool uploadLocalFile(const std::string &fileName);
