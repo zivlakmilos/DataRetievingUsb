@@ -13,7 +13,7 @@ public:
     Settings(void);
     virtual ~Settings(void);
 
-    inline json jsonSettings(void) { return m_json; }
+    inline json &jsonSettings(void) { return m_json; }
 
 private:
     json m_json;

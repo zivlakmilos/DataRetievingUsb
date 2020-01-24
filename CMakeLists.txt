@@ -8,6 +8,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+find_package(InfluxDB REQUIRED)
+
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(UDEV libudev REQUIRED IMPORTED_TARGET libudev)
@@ -26,6 +28,7 @@ set(project_SRC
     src/Log.cpp
     src/UsbDevice.cpp
     src/Usb.cpp
+    src/DataHandling.cpp
 
     src/main.cpp
 )
@@ -37,7 +40,7 @@ set(project_INCLUDE
 add_executable(dataretreiveusb ${project_SRC} ${project_INCLUDE})
 
 # Tell CMake to link the dataretreiveusb executable
-target_link_libraries(dataretreiveusb PkgConfig::UDEV nlohmann_json::nlohmann_json)
+target_link_libraries(dataretreiveusb PkgConfig::UDEV nlohmann_json::nlohmann_json InfluxData::InfluxDB)
 
 # Install the executable
 install(TARGETS dataretreiveusb DESTINATION bin)
