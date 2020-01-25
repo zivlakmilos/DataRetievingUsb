@@ -8,8 +8,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-find_package(InfluxDB REQUIRED)
-
 find_package(PkgConfig REQUIRED)
 
 pkg_check_modules(UDEV libudev REQUIRED IMPORTED_TARGET libudev)
