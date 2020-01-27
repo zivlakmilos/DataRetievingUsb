@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
         for (auto device : deviceList)
         {
-            if (device.getDevType() == "disk" || device.getDevNode().find("/dev/sda") != std::string::npos)
+            if (device.getDevType() == "disk" || device.getDevNode().find("/dev/mmcblk0") != std::string::npos) // /dev/sda for desktop
             {
                 continue;
             }
