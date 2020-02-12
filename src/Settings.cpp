@@ -2,8 +2,8 @@
 
 #include <fstream>
 
-//const char *Settings::s_settingsPath = "/ets/DataRetreiveUsb.conf";
-const char *Settings::s_settingsPath = "DataRetreiveUsb.conf";
+const char *Settings::s_settingsPath = "/ets/DataRetreiveUsb.conf";
+//const char *Settings::s_settingsPath = "DataRetreiveUsb.conf";
 
 Settings::Settings(void)
 {
