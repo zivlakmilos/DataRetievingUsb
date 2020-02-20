@@ -1,0 +1,1833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="CMakeFiles">
+          <df name="3.13.4">
+            <df name="CompilerIdC">
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <in>feature_tests.c</in>
+          <in>feature_tests.cxx</in>
+        </df>
+      </df>
+      <df name="lib">
+        <df name="json">
+          <df name="benchmarks">
+            <df name="src">
+              <in>benchmarks.cpp</in>
+            </df>
+            <df name="thirdparty">
+              <df name="benchmark">
+                <df name="cmake">
+                  <in>gnu_posix_regex.cpp</in>
+                  <in>posix_regex.cpp</in>
+                  <in>std_regex.cpp</in>
+                  <in>steady_clock.cpp</in>
+                  <in>thread_safety_attributes.cpp</in>
+                </df>
+                <df name="src">
+                  <in>benchmark.cc</in>
+                  <in>benchmark_main.cc</in>
+                  <in>benchmark_register.cc</in>
+                  <in>colorprint.cc</in>
+                  <in>commandlineflags.cc</in>
+                  <in>complexity.cc</in>
+                  <in>console_reporter.cc</in>
+                  <in>counter.cc</in>
+                  <in>csv_reporter.cc</in>
+                  <in>json_reporter.cc</in>
+                  <in>reporter.cc</in>
+                  <in>sleep.cc</in>
+                  <in>statistics.cc</in>
+                  <in>string_util.cc</in>
+                  <in>sysinfo.cc</in>
+                  <in>timers.cc</in>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="doc">
+            <df name="examples">
+              <in>README.cpp</in>
+              <in>array.cpp</in>
+              <in>at__object_t_key_type.cpp</in>
+              <in>at__object_t_key_type_const.cpp</in>
+              <in>at__size_type.cpp</in>
+              <in>at__size_type_const.cpp</in>
+              <in>at_json_pointer.cpp</in>
+              <in>at_json_pointer_const.cpp</in>
+              <in>back.cpp</in>
+              <in>basic_json__CompatibleType.cpp</in>
+              <in>basic_json__InputIt_InputIt.cpp</in>
+              <in>basic_json__basic_json.cpp</in>
+              <in>basic_json__copyassignment.cpp</in>
+              <in>basic_json__list_init_t.cpp</in>
+              <in>basic_json__moveconstructor.cpp</in>
+              <in>basic_json__nullptr_t.cpp</in>
+              <in>basic_json__size_type_basic_json.cpp</in>
+              <in>basic_json__value.cpp</in>
+              <in>basic_json__value_ptr.cpp</in>
+              <in>basic_json__value_t.cpp</in>
+              <in>begin.cpp</in>
+              <in>cbegin.cpp</in>
+              <in>cend.cpp</in>
+              <in>clear.cpp</in>
+              <in>contains.cpp</in>
+              <in>contains_json_pointer.cpp</in>
+              <in>count.cpp</in>
+              <in>crbegin.cpp</in>
+              <in>crend.cpp</in>
+              <in>diff.cpp</in>
+              <in>dump.cpp</in>
+              <in>emplace.cpp</in>
+              <in>emplace_back.cpp</in>
+              <in>empty.cpp</in>
+              <in>end.cpp</in>
+              <in>erase__IteratorType.cpp</in>
+              <in>erase__IteratorType_IteratorType.cpp</in>
+              <in>erase__key_type.cpp</in>
+              <in>erase__size_type.cpp</in>
+              <in>exception.cpp</in>
+              <in>find__key_type.cpp</in>
+              <in>flatten.cpp</in>
+              <in>from_bson.cpp</in>
+              <in>from_cbor.cpp</in>
+              <in>from_msgpack.cpp</in>
+              <in>from_ubjson.cpp</in>
+              <in>front.cpp</in>
+              <in>get__PointerType.cpp</in>
+              <in>get__ValueType_const.cpp</in>
+              <in>get_ptr.cpp</in>
+              <in>get_ref.cpp</in>
+              <in>get_to.cpp</in>
+              <in>insert.cpp</in>
+              <in>insert__count.cpp</in>
+              <in>insert__ilist.cpp</in>
+              <in>insert__range.cpp</in>
+              <in>insert__range_object.cpp</in>
+              <in>invalid_iterator.cpp</in>
+              <in>is_array.cpp</in>
+              <in>is_boolean.cpp</in>
+              <in>is_discarded.cpp</in>
+              <in>is_null.cpp</in>
+              <in>is_number.cpp</in>
+              <in>is_number_float.cpp</in>
+              <in>is_number_integer.cpp</in>
+              <in>is_number_unsigned.cpp</in>
+              <in>is_object.cpp</in>
+              <in>is_primitive.cpp</in>
+              <in>is_string.cpp</in>
+              <in>is_structured.cpp</in>
+              <in>items.cpp</in>
+              <in>iterator_wrapper.cpp</in>
+              <in>json_pointer.cpp</in>
+              <in>json_pointer__back.cpp</in>
+              <in>json_pointer__empty.cpp</in>
+              <in>json_pointer__operator_add.cpp</in>
+              <in>json_pointer__operator_add_binary.cpp</in>
+              <in>json_pointer__parent_pointer.cpp</in>
+              <in>json_pointer__pop_back.cpp</in>
+              <in>json_pointer__push_back.cpp</in>
+              <in>json_pointer__to_string.cpp</in>
+              <in>max_size.cpp</in>
+              <in>merge_patch.cpp</in>
+              <in>meta.cpp</in>
+              <in>object.cpp</in>
+              <in>operator__ValueType.cpp</in>
+              <in>operator__equal.cpp</in>
+              <in>operator__equal__nullptr_t.cpp</in>
+              <in>operator__greater.cpp</in>
+              <in>operator__greaterequal.cpp</in>
+              <in>operator__less.cpp</in>
+              <in>operator__lessequal.cpp</in>
+              <in>operator__notequal.cpp</in>
+              <in>operator__notequal__nullptr_t.cpp</in>
+              <in>operator__value_t.cpp</in>
+              <in>operator_deserialize.cpp</in>
+              <in>operator_serialize.cpp</in>
+              <in>operatorarray__key_type.cpp</in>
+              <in>operatorarray__key_type_const.cpp</in>
+              <in>operatorarray__size_type.cpp</in>
+              <in>operatorarray__size_type_const.cpp</in>
+              <in>operatorjson_pointer.cpp</in>
+              <in>operatorjson_pointer_const.cpp</in>
+              <in>other_error.cpp</in>
+              <in>out_of_range.cpp</in>
+              <in>parse__array__parser_callback_t.cpp</in>
+              <in>parse__contiguouscontainer__parser_callback_t.cpp</in>
+              <in>parse__istream__parser_callback_t.cpp</in>
+              <in>parse__iteratortype__parser_callback_t.cpp</in>
+              <in>parse__string__parser_callback_t.cpp</in>
+              <in>parse_error.cpp</in>
+              <in>patch.cpp</in>
+              <in>push_back.cpp</in>
+              <in>push_back__initializer_list.cpp</in>
+              <in>push_back__object_t__value.cpp</in>
+              <in>rbegin.cpp</in>
+              <in>rend.cpp</in>
+              <in>sax_parse.cpp</in>
+              <in>size.cpp</in>
+              <in>swap__array_t.cpp</in>
+              <in>swap__object_t.cpp</in>
+              <in>swap__reference.cpp</in>
+              <in>swap__string_t.cpp</in>
+              <in>to_bson.cpp</in>
+              <in>to_cbor.cpp</in>
+              <in>to_msgpack.cpp</in>
+              <in>to_ubjson.cpp</in>
+              <in>type.cpp</in>
+              <in>type_error.cpp</in>
+              <in>type_name.cpp</in>
+              <in>unflatten.cpp</in>
+              <in>update.cpp</in>
+              <in>update__range.cpp</in>
+            </df>
+          </df>
+          <df name="test">
+            <df name="cmake_add_subdirectory">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="cmake_import">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="cmake_import_minver">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="src">
+              <in>fuzzer-driver_afl.cpp</in>
+              <in>fuzzer-parse_bson.cpp</in>
+              <in>fuzzer-parse_cbor.cpp</in>
+              <in>fuzzer-parse_json.cpp</in>
+              <in>fuzzer-parse_msgpack.cpp</in>
+              <in>fuzzer-parse_ubjson.cpp</in>
+              <in>unit-algorithms.cpp</in>
+              <in>unit-allocator.cpp</in>
+              <in>unit-alt-string.cpp</in>
+              <in>unit-bson.cpp</in>
+              <in>unit-capacity.cpp</in>
+              <in>unit-cbor.cpp</in>
+              <in>unit-class_const_iterator.cpp</in>
+              <in>unit-class_iterator.cpp</in>
+              <in>unit-class_lexer.cpp</in>
+              <in>unit-class_parser.cpp</in>
+              <in>unit-comparison.cpp</in>
+              <in>unit-concepts.cpp</in>
+              <in>unit-constructor1.cpp</in>
+              <in>unit-constructor2.cpp</in>
+              <in>unit-convenience.cpp</in>
+              <in>unit-conversions.cpp</in>
+              <in>unit-deserialization.cpp</in>
+              <in>unit-element_access1.cpp</in>
+              <in>unit-element_access2.cpp</in>
+              <in>unit-inspection.cpp</in>
+              <in>unit-items.cpp</in>
+              <in>unit-iterators1.cpp</in>
+              <in>unit-iterators2.cpp</in>
+              <in>unit-json_patch.cpp</in>
+              <in>unit-json_pointer.cpp</in>
+              <in>unit-large_json.cpp</in>
+              <in>unit-merge_patch.cpp</in>
+              <in>unit-meta.cpp</in>
+              <in>unit-modifiers.cpp</in>
+              <in>unit-msgpack.cpp</in>
+              <in>unit-noexcept.cpp</in>
+              <in>unit-pointer_access.cpp</in>
+              <in>unit-readme.cpp</in>
+              <in>unit-reference_access.cpp</in>
+              <in>unit-regression.cpp</in>
+              <in>unit-serialization.cpp</in>
+              <in>unit-testsuites.cpp</in>
+              <in>unit-to_chars.cpp</in>
+              <in>unit-ubjson.cpp</in>
+              <in>unit-udt.cpp</in>
+              <in>unit-unicode.cpp</in>
+              <in>unit-wstring.cpp</in>
+              <in>unit.cpp</in>
+            </df>
+            <df name="thirdparty">
+              <df name="Fuzzer">
+                <df name="afl">
+                  <in>afl_driver.cpp</in>
+                </df>
+                <df name="standalone">
+                  <in>StandaloneFuzzTargetMain.c</in>
+                </df>
+                <df name="test">
+                  <in>AFLDriverTest.cpp</in>
+                  <in>AbsNegAndConstant64Test.cpp</in>
+                  <in>AbsNegAndConstantTest.cpp</in>
+                  <in>AccumulateAllocationsTest.cpp</in>
+                  <in>BufferOverflowOnInput.cpp</in>
+                  <in>CallerCalleeTest.cpp</in>
+                  <in>CounterTest.cpp</in>
+                  <in>CustomCrossOverTest.cpp</in>
+                  <in>CustomMutatorTest.cpp</in>
+                  <in>DSO1.cpp</in>
+                  <in>DSO2.cpp</in>
+                  <in>DSOTestExtra.cpp</in>
+                  <in>DSOTestMain.cpp</in>
+                  <in>DivTest.cpp</in>
+                  <in>EmptyTest.cpp</in>
+                  <in>FourIndependentBranchesTest.cpp</in>
+                  <in>FullCoverageSetTest.cpp</in>
+                  <in>FuzzerUnittest.cpp</in>
+                  <in>InitializeTest.cpp</in>
+                  <in>LeakTest.cpp</in>
+                  <in>LeakTimeoutTest.cpp</in>
+                  <in>LoadTest.cpp</in>
+                  <in>MemcmpTest.cpp</in>
+                  <in>NthRunCrashTest.cpp</in>
+                  <in>NullDerefOnEmptyTest.cpp</in>
+                  <in>NullDerefTest.cpp</in>
+                  <in>OneHugeAllocTest.cpp</in>
+                  <in>OutOfMemorySingleLargeMallocTest.cpp</in>
+                  <in>OutOfMemoryTest.cpp</in>
+                  <in>RepeatedBytesTest.cpp</in>
+                  <in>RepeatedMemcmp.cpp</in>
+                  <in>ShrinkControlFlowTest.cpp</in>
+                  <in>ShrinkValueProfileTest.cpp</in>
+                  <in>SignedIntOverflowTest.cpp</in>
+                  <in>SimpleCmpTest.cpp</in>
+                  <in>SimpleDictionaryTest.cpp</in>
+                  <in>SimpleHashTest.cpp</in>
+                  <in>SimpleTest.cpp</in>
+                  <in>SimpleThreadedTest.cpp</in>
+                  <in>SingleMemcmpTest.cpp</in>
+                  <in>SingleStrcmpTest.cpp</in>
+                  <in>SingleStrncmpTest.cpp</in>
+                  <in>SpamyTest.cpp</in>
+                  <in>StrcmpTest.cpp</in>
+                  <in>StrncmpOOBTest.cpp</in>
+                  <in>StrncmpTest.cpp</in>
+                  <in>StrstrTest.cpp</in>
+                  <in>SwapCmpTest.cpp</in>
+                  <in>Switch2Test.cpp</in>
+                  <in>SwitchTest.cpp</in>
+                  <in>ThreadedLeakTest.cpp</in>
+                  <in>ThreadedTest.cpp</in>
+                  <in>TimeoutEmptyTest.cpp</in>
+                  <in>TimeoutTest.cpp</in>
+                  <in>TraceMallocTest.cpp</in>
+                  <in>UninstrumentedTest.cpp</in>
+                </df>
+                <in>FuzzerCrossOver.cpp</in>
+                <in>FuzzerDriver.cpp</in>
+                <in>FuzzerExtFunctionsDlsym.cpp</in>
+                <in>FuzzerExtFunctionsWeak.cpp</in>
+                <in>FuzzerExtFunctionsWeakAlias.cpp</in>
+                <in>FuzzerIO.cpp</in>
+                <in>FuzzerIOPosix.cpp</in>
+                <in>FuzzerIOWindows.cpp</in>
+                <in>FuzzerLoop.cpp</in>
+                <in>FuzzerMain.cpp</in>
+                <in>FuzzerMerge.cpp</in>
+                <in>FuzzerMutate.cpp</in>
+                <in>FuzzerSHA1.cpp</in>
+                <in>FuzzerTracePC.cpp</in>
+                <in>FuzzerTraceState.cpp</in>
+                <in>FuzzerUtil.cpp</in>
+                <in>FuzzerUtilDarwin.cpp</in>
+                <in>FuzzerUtilLinux.cpp</in>
+                <in>FuzzerUtilPosix.cpp</in>
+                <in>FuzzerUtilWindows.cpp</in>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="spdlog">
+          <df name="bench">
+            <in>async_bench.cpp</in>
+            <in>bench.cpp</in>
+            <in>formatter-bench.cpp</in>
+            <in>latency.cpp</in>
+          </df>
+          <df name="example">
+            <in>example.cpp</in>
+          </df>
+          <df name="src">
+            <in>async.cpp</in>
+            <in>color_sinks.cpp</in>
+            <in>file_sinks.cpp</in>
+            <in>fmt.cpp</in>
+            <in>spdlog.cpp</in>
+            <in>stdout_sinks.cpp</in>
+          </df>
+          <df name="tests">
+            <in>main.cpp</in>
+            <in>test_async.cpp</in>
+            <in>test_backtrace.cpp</in>
+            <in>test_create_dir.cpp</in>
+            <in>test_daily_logger.cpp</in>
+            <in>test_dup_filter.cpp</in>
+            <in>test_errors.cpp</in>
+            <in>test_file_helper.cpp</in>
+            <in>test_file_logging.cpp</in>
+            <in>test_fmt_helper.cpp</in>
+            <in>test_macros.cpp</in>
+            <in>test_misc.cpp</in>
+            <in>test_mpmc_q.cpp</in>
+            <in>test_pattern_formatter.cpp</in>
+            <in>test_registry.cpp</in>
+            <in>test_stdout_api.cpp</in>
+            <in>test_systemd.cpp</in>
+            <in>utils.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="src">
+        <in>DataHandling.cpp</in>
+        <in>Log.cpp</in>
+        <in>Settings.cpp</in>
+        <in>Usb.cpp</in>
+        <in>UsbDevice.cpp</in>
+        <in>main.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>build/Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>build</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>build</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="build/CMakeFiles/3.13.4/CompilerIdC/CMakeCCompilerId.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="build/CMakeFiles/3.13.4/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="build/CMakeFiles/feature_tests.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="build/CMakeFiles/feature_tests.cxx" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/src/benchmarks.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/cmake/gnu_posix_regex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/cmake/posix_regex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/cmake/std_regex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/cmake/steady_clock.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/cmake/thread_safety_attributes.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/benchmark.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/benchmark_main.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/benchmark_register.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/colorprint.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/commandlineflags.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/complexity.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/console_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/counter.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/csv_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/json_reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/reporter.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/sleep.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/statistics.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/string_util.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/sysinfo.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/benchmarks/thirdparty/benchmark/src/timers.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/README.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/array.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at__object_t_key_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at__object_t_key_type_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at__size_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at__size_type_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at_json_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/at_json_pointer_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/back.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__CompatibleType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__InputIt_InputIt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__basic_json.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__copyassignment.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__list_init_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__moveconstructor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__nullptr_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__size_type_basic_json.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__value.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__value_ptr.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/basic_json__value_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/begin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/cbegin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/cend.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/clear.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/contains.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/contains_json_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/count.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/crbegin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/crend.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/diff.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/dump.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/emplace.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/emplace_back.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/empty.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/end.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/erase__IteratorType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/erase__IteratorType_IteratorType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/erase__key_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/erase__size_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/exception.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/find__key_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/flatten.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/from_bson.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/from_cbor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/from_msgpack.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/from_ubjson.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/front.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/get__PointerType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/get__ValueType_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/get_ptr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/get_ref.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/get_to.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/insert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/insert__count.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/insert__ilist.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/insert__range.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/insert__range_object.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/invalid_iterator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_array.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_boolean.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_discarded.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_null.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_number.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_number_float.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_number_integer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_number_unsigned.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_object.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_primitive.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_string.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/is_structured.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/items.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/iterator_wrapper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__back.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__empty.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__operator_add.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__operator_add_binary.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__parent_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__pop_back.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__push_back.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/json_pointer__to_string.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/max_size.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/merge_patch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/meta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/object.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__ValueType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__equal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__equal__nullptr_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__greater.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__greaterequal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__less.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__lessequal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__notequal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__notequal__nullptr_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator__value_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator_deserialize.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operator_serialize.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorarray__key_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorarray__key_type_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorarray__size_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorarray__size_type_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorjson_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/operatorjson_pointer_const.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/other_error.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/out_of_range.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse__array__parser_callback_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse__contiguouscontainer__parser_callback_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse__istream__parser_callback_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse__iteratortype__parser_callback_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse__string__parser_callback_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/parse_error.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/patch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/push_back.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/push_back__initializer_list.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/push_back__object_t__value.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/rbegin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/rend.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/sax_parse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/size.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/swap__array_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/swap__object_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/swap__reference.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/swap__string_t.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/to_bson.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/to_cbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/to_msgpack.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/to_ubjson.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/type.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/type_error.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/type_name.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/unflatten.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/update.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/doc/examples/update__range.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/cmake_add_subdirectory/project/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/cmake_import/project/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/cmake_import_minver/project/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-driver_afl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-parse_bson.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-parse_cbor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-parse_json.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-parse_msgpack.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/fuzzer-parse_ubjson.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-algorithms.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-allocator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-alt-string.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-bson.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-capacity.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-cbor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-class_const_iterator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-class_iterator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-class_lexer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-class_parser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-comparison.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-concepts.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-constructor1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-constructor2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-convenience.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-conversions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-deserialization.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-element_access1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-element_access2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-inspection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-items.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-iterators1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-iterators2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-json_patch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-json_pointer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-large_json.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-merge_patch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-meta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-modifiers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-msgpack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-noexcept.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-pointer_access.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-readme.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-reference_access.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-regression.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-serialization.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-testsuites.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-to_chars.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-ubjson.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-udt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-unicode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit-wstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/src/unit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerCrossOver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerDriver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerExtFunctionsDlsym.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerExtFunctionsWeak.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerExtFunctionsWeakAlias.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerIO.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerIOPosix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerIOWindows.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerLoop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerMain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerMerge.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerMutate.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerSHA1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerTracePC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerTraceState.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerUtil.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerUtilDarwin.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerUtilLinux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerUtilPosix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/FuzzerUtilWindows.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/afl/afl_driver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/standalone/StandaloneFuzzTargetMain.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/AFLDriverTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/AbsNegAndConstant64Test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/AbsNegAndConstantTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/AccumulateAllocationsTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/BufferOverflowOnInput.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/CallerCalleeTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/CounterTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/CustomCrossOverTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/CustomMutatorTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/DSO1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/DSO2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/DSOTestExtra.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/DSOTestMain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/DivTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/EmptyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/FourIndependentBranchesTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/FullCoverageSetTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/FuzzerUnittest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/InitializeTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/LeakTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/LeakTimeoutTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/LoadTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/MemcmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/NthRunCrashTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/NullDerefOnEmptyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/NullDerefTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/OneHugeAllocTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/OutOfMemorySingleLargeMallocTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/OutOfMemoryTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/RepeatedBytesTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/RepeatedMemcmp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/ShrinkControlFlowTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/ShrinkValueProfileTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SignedIntOverflowTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SimpleCmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SimpleDictionaryTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SimpleHashTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SimpleTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SimpleThreadedTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SingleMemcmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SingleStrcmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SingleStrncmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SpamyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/StrcmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/StrncmpOOBTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/StrncmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/StrstrTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SwapCmpTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/Switch2Test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/SwitchTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/ThreadedLeakTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/ThreadedTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/TimeoutEmptyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/TimeoutTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/TraceMallocTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/json/test/thirdparty/Fuzzer/test/UninstrumentedTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/bench/async_bench.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/bench/bench.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/bench/formatter-bench.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/bench/latency.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/example/example.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/async.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/color_sinks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/file_sinks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/fmt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/spdlog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/src/stdout_sinks.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_async.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_backtrace.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_create_dir.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_daily_logger.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_dup_filter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_errors.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_file_helper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_file_logging.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_fmt_helper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_macros.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_misc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_mpmc_q.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_pattern_formatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_registry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_stdout_api.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/test_systemd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="lib/spdlog/tests/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DataHandling.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Log.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Settings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Usb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UsbDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

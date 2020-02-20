@@ -5,10 +5,26 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#include <iostream>
+
 #include "Log.h"
 #include "Settings.h"
 #include "Usb.h"
 #include "DataHandling.h"
+
+volatile bool g_running;
+
+void signalHandler(int sig)
+{
+    switch (sig)
+    {
+        case SIGHUP:
+            break;
+        case SIGTERM:
+            g_running = false;
+            break;
+    }
+}
 
 static void daemonize()
 {
@@ -32,7 +48,8 @@ static void daemonize()
     /* Catch, ignore and handle signals */
     //TODO: Implement a working signal handler */
     signal(SIGCHLD, SIG_IGN);
-    signal(SIGHUP, SIG_IGN);
+    signal(SIGHUP, signalHandler); /* catch hangup signal */
+    signal(SIGTERM, signalHandler); /* catch kill signal */
 
     /* Fork off for the second time*/
     pid = fork();
@@ -54,7 +71,7 @@ static void daemonize()
 
     /* Close all open file descriptors */
     int x;
-    for (x = sysconf(_SC_OPEN_MAX); x>=0; x--)
+    for (x = sysconf(_SC_OPEN_MAX); x >= 0; x--)
     {
         close (x);
     }
@@ -65,7 +82,7 @@ static void daemonize()
 
 int main(int argc, char *argv[])
 {
-    daemonize();
+    //daemonize();
 
     LOG_INFO("---------------------------------------------------------------");
     LOG_INFO("Service start");
@@ -76,10 +93,14 @@ int main(int argc, char *argv[])
     DataHandling dh("data/local");
     dh.uploadLocalFiles();
 
-    while (1)
+    g_running = true;
+
+    while (g_running)
     {
         auto settings = Settings().jsonSettings();
-        std::string mountPoint = settings["Data"]["MountPoint"];
+        std::string mountPoint = settings["Device"]["MountPoint"];
+        std::string ignoreDevice1 = settings["Device"]["IgnoreDevice1"];
+        std::string ignoreDevice2 = settings["Device"]["IgnoreDevice2"];
 
         std::vector<UsbDevice> deviceList = usb.getBlockDeviceList();
 
@@ -87,7 +108,7 @@ int main(int argc, char *argv[])
 
         for (auto device : deviceList)
         {
-            if (device.getDevType() == "disk" || device.getDevNode().find("/dev/mmcblk0") != std::string::npos) // /dev/sda for desktop
+            if (device.getDevType() == "disk" || device.getDevNode().find(ignoreDevice1) != std::string::npos || device.getDevNode().find(ignoreDevice2) != std::string::npos)
             {
                 continue;
             }
@@ -98,7 +119,7 @@ int main(int argc, char *argv[])
                 continue;
             }
 
-            LOG_WARN("Device mounted: {0} -> {1}", device.getDevNode(), mountPoint);
+            LOG_INFO("Device mounted: {0} -> {1}", device.getDevNode(), mountPoint);
 
             dh.fileCopy();
 
@@ -108,7 +129,7 @@ int main(int argc, char *argv[])
         dh.uploadLocalFiles();
 
         using namespace std::chrono_literals;
-        std::this_thread::sleep_for(250ms);
+        std::this_thread::sleep_for(1000ms);
     }
 
     LOG_INFO("---------------------------------------------------------------");

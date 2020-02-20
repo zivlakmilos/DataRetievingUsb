@@ -36,60 +36,76 @@ bool DataHandling::fileExists(void)
 bool DataHandling::fileCopy(void)
 {
     auto settings = Settings().jsonSettings();
-    std::string fileName = settings["Data"]["InputFile"];
+    std::string fileExtension = settings["Data"]["InputFileExtension"];
     std::string localFilePath = settings["Data"]["LocalFilePath"];
 
     //uint64_t currentTimestamp = timestamp();
     std::string currentTime = timestampString();
 
-    std::string iFileName = m_basePath + "/" + fileName;
-    std::ifstream iFile(iFileName);
-    if (!iFile.is_open())
+    for (const auto &entry : std::filesystem::directory_iterator(m_basePath))
     {
-        LOG_ERROR("Cannot open file for read: {0}", iFileName);
-        return false;
-    }
+        std::string iFileName = entry.path().string();
 
-    std::string line;
-    getline(iFile, line);
-    std::string header = line;
+        if (iFileName.find("." + fileExtension) == std::string::npos)
+        {
+            continue;
+        }
 
-    size_t pos = header.find(":");
-    if (pos == std::string::npos)
-    {
-        LOG_ERROR("Wrong header");
-        return false;
-    }
-    if (header.substr(0, pos) != "DeviceId")
-    {
-        LOG_ERROR("Wrong header");
-        return false;
-    }
+        std::ifstream iFile(iFileName);
+        if (!iFile.is_open())
+        {
+            LOG_ERROR("Cannot open file for read: {0}", iFileName);
+            return false;
+        }
 
-    header.erase(0, pos + 1);
-    std::string deviceId = header;
+        std::string line;
+        getline(iFile, line);
+        std::string header = line;
 
-    std::string oFileName = localFilePath + "/DB" + deviceId + currentTime + ".txt";
-    std::ofstream oFile(oFileName);
+        /*
+         * TODO: Header parseing
+         */
+        /*
+        size_t pos = header.find(":");
+        if (pos == std::string::npos)
+        {
+            LOG_ERROR("Wrong header");
+            return false;
+        }
+        if (header.substr(0, pos) != "DeviceId")
+        {
+            LOG_ERROR("Wrong header");
+            return false;
+        }
 
-    if (!oFile.is_open())
-    {
-        LOG_ERROR("Cannot open file for write: {0}", oFileName);
-        return false;
-    }
+        header.erase(0, pos + 1);
+        std::string deviceId = header;
+        */
 
-    oFile << line << std::endl;
+        std::string deviceId = "0";
 
-    while (getline(iFile, line))
-    {
+        std::string oFileName = localFilePath + "/DB" + deviceId + currentTime + ".txt";
+        std::ofstream oFile(oFileName);
+
+        if (!oFile.is_open())
+        {
+            LOG_ERROR("Cannot open file for write: {0}", oFileName);
+            return false;
+        }
+
         oFile << line << std::endl;
+
+        while (getline(iFile, line))
+        {
+            oFile << line << std::endl;
+        }
+
+        oFile.flush();
+        oFile.close();
+        iFile.close();
+
+        std::remove(iFileName.c_str());
     }
-
-    oFile.flush();
-    oFile.close();
-    iFile.close();
-
-    std::remove(iFileName.c_str());
 
     return true;
 }
@@ -148,18 +164,22 @@ bool DataHandling::uploadLocalFile(const std::string &fileName)
 
     if (!iFile.is_open())
     {
-        LOG_WARN("Error whiel read file: {0}", fileName);
+        LOG_WARN("Error while read file: {0}", fileName);
         return false;
     }
 
     auto curl = curl_easy_init();
     if (!curl)
     {
-        LOG_WARN("Error while initialising curl");
+        LOG_WARN("Error while initializing curl");
         return false;
     }
 
     std::string line;
+    /*
+     * TODO: Read and ignore header
+     */
+    /*
     getline(iFile, line);
     std::string header = line;
 
@@ -177,11 +197,11 @@ bool DataHandling::uploadLocalFile(const std::string &fileName)
 
     header.erase(0, pos + 1);
     std::string deviceId = header;
+    */
 
     std::ostringstream oss;
     //oss << "DB" << deviceId << " line0=" << line << std::endl;
 
-    int i = 1;
     while (getline(iFile, line))
     {
         if (line.empty())
@@ -189,8 +209,45 @@ bool DataHandling::uploadLocalFile(const std::string &fileName)
             continue;
         }
 
-        oss << "DB" << deviceId << " line" << i << "=" << line << std::endl;
-        i++;
+        std::stringstream stringStream(line);
+        std::vector<std::string> stringList;
+
+        std::string segment;
+        while (getline(stringStream, segment, ';'))
+        {
+            stringList.push_back(segment);
+        }
+
+        if (stringList.size() != 19)
+        {
+            continue;
+        }
+
+        std::string deviceId = stringList[0];
+        std::string timestamp = stringList[1];
+
+        oss << deviceId
+            << " col1="  << stringList[2]
+            << " col2="  << stringList[3]
+            << " col3="  << stringList[4]
+            << " col4="  << stringList[5]
+            << " col5="  << stringList[6]
+            << " col6="  << stringList[7]
+            << " col7="  << stringList[8]
+            << " col8="  << stringList[9]
+            << " col9="  << stringList[10]
+            << " col10=" << stringList[11]
+            << " col11=" << stringList[12]
+            << " col12=" << stringList[13]
+            << " col13=" << stringList[14]
+            << " col14=" << stringList[15]
+            << " col16=" << stringList[16]
+            << " col17=" << stringList[17]
+            << " col18=" << stringList[18]
+            << " " << timestamp
+            << std::endl;
+
+        //oss << "DB" << deviceId << " line" << i << "=" << line << std::endl;
     }
 
     std::string data = oss.str();
@@ -211,7 +268,7 @@ bool DataHandling::uploadLocalFile(const std::string &fileName)
     }
     else
     {
-        LOG_WARN("Error while comunicating with server: {0}", response);
+        LOG_WARN("Error while communicating with server: {0}", response);
     }
 
     curl_easy_cleanup(curl);

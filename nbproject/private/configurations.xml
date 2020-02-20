@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="CMakeFiles">
+          <df name="3.13.4">
+            <df name="CompilerIdC">
+              <df name="tmp">
+              </df>
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <df name="tmp">
+              </df>
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="CMakeTmp">
+          </df>
+          <df name="dataretreiveusb.dir">
+            <df name="src">
+            </df>
+          </df>
+          <in>feature_tests.c</in>
+          <in>feature_tests.cxx</in>
+        </df>
+        <df name="lib">
+          <df name="json">
+            <df name="CMakeFiles">
+              <df name="Continuous.dir">
+              </df>
+              <df name="ContinuousBuild.dir">
+              </df>
+              <df name="ContinuousConfigure.dir">
+              </df>
+              <df name="ContinuousCoverage.dir">
+              </df>
+              <df name="ContinuousMemCheck.dir">
+              </df>
+              <df name="ContinuousStart.dir">
+              </df>
+              <df name="ContinuousSubmit.dir">
+              </df>
+              <df name="ContinuousTest.dir">
+              </df>
+              <df name="ContinuousUpdate.dir">
+              </df>
+              <df name="Experimental.dir">
+              </df>
+              <df name="ExperimentalBuild.dir">
+              </df>
+              <df name="ExperimentalConfigure.dir">
+              </df>
+              <df name="ExperimentalCoverage.dir">
+              </df>
+              <df name="ExperimentalMemCheck.dir">
+              </df>
+              <df name="ExperimentalStart.dir">
+              </df>
+              <df name="ExperimentalSubmit.dir">
+              </df>
+              <df name="ExperimentalTest.dir">
+              </df>
+              <df name="ExperimentalUpdate.dir">
+              </df>
+              <df name="Export">
+                <df name="lib">
+                  <df name="cmake">
+                    <df name="nlohmann_json">
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="Nightly.dir">
+              </df>
+              <df name="NightlyBuild.dir">
+              </df>
+              <df name="NightlyConfigure.dir">
+              </df>
+              <df name="NightlyCoverage.dir">
+              </df>
+              <df name="NightlyMemCheck.dir">
+              </df>
+              <df name="NightlyMemoryCheck.dir">
+              </df>
+              <df name="NightlyStart.dir">
+              </df>
+              <df name="NightlySubmit.dir">
+              </df>
+              <df name="NightlyTest.dir">
+              </df>
+              <df name="NightlyUpdate.dir">
+              </df>
+            </df>
+            <df name="Testing">
+              <df name="Temporary">
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="include">
+        <in>DataHandling.h</in>
+        <in>Log.h</in>
+        <in>Settings.h</in>
+        <in>Usb.h</in>
+        <in>UsbDevice.h</in>
+      </df>
+      <df name="lib">
+        <df name="json">
+          <df name=".circleci">
+          </df>
+          <df name=".github">
+            <df name="ISSUE_TEMPLATE">
+            </df>
+            <df name="workflows">
+            </df>
+          </df>
+          <df name="benchmarks">
+            <df name="data">
+              <df name="jeopardy">
+              </df>
+              <df name="nativejson-benchmark">
+              </df>
+            </df>
+            <df name="src">
+              <in>benchmarks.cpp</in>
+            </df>
+            <df name="thirdparty">
+              <df name="benchmark">
+                <df name="cmake">
+                  <df name="Modules">
+                  </df>
+                  <in>gnu_posix_regex.cpp</in>
+                  <in>posix_regex.cpp</in>
+                  <in>std_regex.cpp</in>
+                  <in>steady_clock.cpp</in>
+                  <in>thread_safety_attributes.cpp</in>
+                </df>
+                <df name="docs">
+                </df>
+                <df name="include">
+                  <df name="benchmark">
+                    <in>benchmark.h</in>
+                  </df>
+                </df>
+                <df name="src">
+                  <in>arraysize.h</in>
+                  <in>benchmark.cc</in>
+                  <in>benchmark_api_internal.h</in>
+                  <in>benchmark_main.cc</in>
+                  <in>benchmark_register.cc</in>
+                  <in>benchmark_register.h</in>
+                  <in>check.h</in>
+                  <in>colorprint.cc</in>
+                  <in>colorprint.h</in>
+                  <in>commandlineflags.cc</in>
+                  <in>commandlineflags.h</in>
+                  <in>complexity.cc</in>
+                  <in>complexity.h</in>
+                  <in>console_reporter.cc</in>
+                  <in>counter.cc</in>
+                  <in>counter.h</in>
+                  <in>csv_reporter.cc</in>
+                  <in>cycleclock.h</in>
+                  <in>internal_macros.h</in>
+                  <in>json_reporter.cc</in>
+                  <in>log.h</in>
+                  <in>mutex.h</in>
+                  <in>re.h</in>
+                  <in>reporter.cc</in>
+                  <in>sleep.cc</in>
+                  <in>sleep.h</in>
+                  <in>statistics.cc</in>
+                  <in>statistics.h</in>
+                  <in>string_util.cc</in>
+                  <in>string_util.h</in>
+                  <in>sysinfo.cc</in>
+                  <in>thread_manager.h</in>
+                  <in>thread_timer.h</in>
+                  <in>timers.cc</in>
+                  <in>timers.h</in>
+                </df>
+                <df name="tools">
+                  <df name="gbench">
+                    <df name="Inputs">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="cmake">
+          </df>
+          <df name="doc">
+            <df name="css">
+            </df>
+            <df name="examples">
+              <in>README.cpp</in>
+              <in>array.cpp</in>
+              <in>at__object_t_key_type.cpp</in>
+              <in>at__object_t_key_type_const.cpp</in>
+              <in>at__size_type.cpp</in>
+              <in>at__size_type_const.cpp</in>
+              <in>at_json_pointer.cpp</in>
+              <in>at_json_pointer_const.cpp</in>
+              <in>back.cpp</in>
+              <in>basic_json__CompatibleType.cpp</in>
+              <in>basic_json__InputIt_InputIt.cpp</in>
+              <in>basic_json__basic_json.cpp</in>
+              <in>basic_json__copyassignment.cpp</in>
+              <in>basic_json__list_init_t.cpp</in>
+              <in>basic_json__moveconstructor.cpp</in>
+              <in>basic_json__nullptr_t.cpp</in>
+              <in>basic_json__size_type_basic_json.cpp</in>
+              <in>basic_json__value.cpp</in>
+              <in>basic_json__value_ptr.cpp</in>
+              <in>basic_json__value_t.cpp</in>
+              <in>begin.cpp</in>
+              <in>cbegin.cpp</in>
+              <in>cend.cpp</in>
+              <in>clear.cpp</in>
+              <in>contains.cpp</in>
+              <in>contains_json_pointer.cpp</in>
+              <in>count.cpp</in>
+              <in>crbegin.cpp</in>
+              <in>crend.cpp</in>
+              <in>diff.cpp</in>
+              <in>dump.cpp</in>
+              <in>emplace.cpp</in>
+              <in>emplace_back.cpp</in>
+              <in>empty.cpp</in>
+              <in>end.cpp</in>
+              <in>erase__IteratorType.cpp</in>
+              <in>erase__IteratorType_IteratorType.cpp</in>
+              <in>erase__key_type.cpp</in>
+              <in>erase__size_type.cpp</in>
+              <in>exception.cpp</in>
+              <in>find__key_type.cpp</in>
+              <in>flatten.cpp</in>
+              <in>from_bson.cpp</in>
+              <in>from_cbor.cpp</in>
+              <in>from_msgpack.cpp</in>
+              <in>from_ubjson.cpp</in>
+              <in>front.cpp</in>
+              <in>get__PointerType.cpp</in>
+              <in>get__ValueType_const.cpp</in>
+              <in>get_ptr.cpp</in>
+              <in>get_ref.cpp</in>
+              <in>get_to.cpp</in>
+              <in>insert.cpp</in>
+              <in>insert__count.cpp</in>
+              <in>insert__ilist.cpp</in>
+              <in>insert__range.cpp</in>
+              <in>insert__range_object.cpp</in>
+              <in>invalid_iterator.cpp</in>
+              <in>is_array.cpp</in>
+              <in>is_boolean.cpp</in>
+              <in>is_discarded.cpp</in>
+              <in>is_null.cpp</in>
+              <in>is_number.cpp</in>
+              <in>is_number_float.cpp</in>
+              <in>is_number_integer.cpp</in>
+              <in>is_number_unsigned.cpp</in>
+              <in>is_object.cpp</in>
+              <in>is_primitive.cpp</in>
+              <in>is_string.cpp</in>
+              <in>is_structured.cpp</in>
+              <in>items.cpp</in>
+              <in>iterator_wrapper.cpp</in>
+              <in>json_pointer.cpp</in>
+              <in>json_pointer__back.cpp</in>
+              <in>json_pointer__empty.cpp</in>
+              <in>json_pointer__operator_add.cpp</in>
+              <in>json_pointer__operator_add_binary.cpp</in>
+              <in>json_pointer__parent_pointer.cpp</in>
+              <in>json_pointer__pop_back.cpp</in>
+              <in>json_pointer__push_back.cpp</in>
+              <in>json_pointer__to_string.cpp</in>
+              <in>max_size.cpp</in>
+              <in>merge_patch.cpp</in>
+              <in>meta.cpp</in>
+              <in>object.cpp</in>
+              <in>operator__ValueType.cpp</in>
+              <in>operator__equal.cpp</in>
+              <in>operator__equal__nullptr_t.cpp</in>
+              <in>operator__greater.cpp</in>
+              <in>operator__greaterequal.cpp</in>
+              <in>operator__less.cpp</in>
+              <in>operator__lessequal.cpp</in>
+              <in>operator__notequal.cpp</in>
+              <in>operator__notequal__nullptr_t.cpp</in>
+              <in>operator__value_t.cpp</in>
+              <in>operator_deserialize.cpp</in>
+              <in>operator_serialize.cpp</in>
+              <in>operatorarray__key_type.cpp</in>
+              <in>operatorarray__key_type_const.cpp</in>
+              <in>operatorarray__size_type.cpp</in>
+              <in>operatorarray__size_type_const.cpp</in>
+              <in>operatorjson_pointer.cpp</in>
+              <in>operatorjson_pointer_const.cpp</in>
+              <in>other_error.cpp</in>
+              <in>out_of_range.cpp</in>
+              <in>parse__array__parser_callback_t.cpp</in>
+              <in>parse__contiguouscontainer__parser_callback_t.cpp</in>
+              <in>parse__istream__parser_callback_t.cpp</in>
+              <in>parse__iteratortype__parser_callback_t.cpp</in>
+              <in>parse__string__parser_callback_t.cpp</in>
+              <in>parse_error.cpp</in>
+              <in>patch.cpp</in>
+              <in>push_back.cpp</in>
+              <in>push_back__initializer_list.cpp</in>
+              <in>push_back__object_t__value.cpp</in>
+              <in>rbegin.cpp</in>
+              <in>rend.cpp</in>
+              <in>sax_parse.cpp</in>
+              <in>size.cpp</in>
+              <in>swap__array_t.cpp</in>
+              <in>swap__object_t.cpp</in>
+              <in>swap__reference.cpp</in>
+              <in>swap__string_t.cpp</in>
+              <in>to_bson.cpp</in>
+              <in>to_cbor.cpp</in>
+              <in>to_msgpack.cpp</in>
+              <in>to_ubjson.cpp</in>
+              <in>type.cpp</in>
+              <in>type_error.cpp</in>
+              <in>type_name.cpp</in>
+              <in>unflatten.cpp</in>
+              <in>update.cpp</in>
+              <in>update__range.cpp</in>
+            </df>
+            <df name="images">
+            </df>
+            <df name="scripts">
+            </df>
+            <df name="usages">
+            </df>
+          </df>
+          <df name="include">
+            <df name="nlohmann">
+              <df name="detail">
+                <df name="conversions">
+                  <in>from_json.hpp</in>
+                  <in>to_chars.hpp</in>
+                  <in>to_json.hpp</in>
+                </df>
+                <df name="input">
+                  <in>binary_reader.hpp</in>
+                  <in>input_adapters.hpp</in>
+                  <in>json_sax.hpp</in>
+                  <in>lexer.hpp</in>
+                  <in>parser.hpp</in>
+                  <in>position_t.hpp</in>
+                </df>
+                <df name="iterators">
+                  <in>internal_iterator.hpp</in>
+                  <in>iter_impl.hpp</in>
+                  <in>iteration_proxy.hpp</in>
+                  <in>iterator_traits.hpp</in>
+                  <in>json_reverse_iterator.hpp</in>
+                  <in>primitive_iterator.hpp</in>
+                </df>
+                <df name="meta">
+                  <in>cpp_future.hpp</in>
+                  <in>detected.hpp</in>
+                  <in>is_sax.hpp</in>
+                  <in>type_traits.hpp</in>
+                  <in>void_t.hpp</in>
+                </df>
+                <df name="output">
+                  <in>binary_writer.hpp</in>
+                  <in>output_adapters.hpp</in>
+                  <in>serializer.hpp</in>
+                </df>
+                <in>exceptions.hpp</in>
+                <in>json_pointer.hpp</in>
+                <in>json_ref.hpp</in>
+                <in>macro_scope.hpp</in>
+                <in>macro_unscope.hpp</in>
+                <in>value_t.hpp</in>
+              </df>
+              <df name="thirdparty">
+                <df name="hedley">
+                  <in>hedley.hpp</in>
+                  <in>hedley_undef.hpp</in>
+                </df>
+              </df>
+              <in>adl_serializer.hpp</in>
+              <in>json.hpp</in>
+              <in>json_fwd.hpp</in>
+            </df>
+          </df>
+          <df name="single_include">
+            <df name="nlohmann">
+              <in>json.hpp</in>
+            </df>
+          </df>
+          <df name="test">
+            <df name="cmake_add_subdirectory">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="cmake_import">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="cmake_import_minver">
+              <df name="project">
+                <in>main.cpp</in>
+              </df>
+            </df>
+            <df name="data">
+              <df name="big-list-of-naughty-strings">
+              </df>
+              <df name="cbor_regression">
+              </df>
+              <df name="json-patch-tests">
+              </df>
+              <df name="json.org">
+              </df>
+              <df name="json_nlohmann_tests">
+              </df>
+              <df name="json_roundtrip">
+              </df>
+              <df name="json_tests">
+              </df>
+              <df name="json_testsuite">
+              </df>
+              <df name="markus_kuhn">
+              </df>
+              <df name="nst_json_testsuite">
+                <df name="test_parsing">
+                </df>
+              </df>
+              <df name="nst_json_testsuite2">
+                <df name="test_parsing">
+                </df>
+              </df>
+              <df name="regression">
+              </df>
+            </df>
+            <df name="reports">
+              <df name="2016-08-29-fuzz">
+              </df>
+              <df name="2016-09-09-nativejson_benchmark">
+              </df>
+              <df name="2016-10-02-fuzz">
+              </df>
+            </df>
+            <df name="src">
+              <in>fuzzer-driver_afl.cpp</in>
+              <in>fuzzer-parse_bson.cpp</in>
+              <in>fuzzer-parse_cbor.cpp</in>
+              <in>fuzzer-parse_json.cpp</in>
+              <in>fuzzer-parse_msgpack.cpp</in>
+              <in>fuzzer-parse_ubjson.cpp</in>
+              <in>unit-algorithms.cpp</in>
+              <in>unit-allocator.cpp</in>
+              <in>unit-alt-string.cpp</in>
+              <in>unit-bson.cpp</in>
+              <in>unit-capacity.cpp</in>
+              <in>unit-cbor.cpp</in>
+              <in>unit-class_const_iterator.cpp</in>
+              <in>unit-class_iterator.cpp</in>
+              <in>unit-class_lexer.cpp</in>
+              <in>unit-class_parser.cpp</in>
+              <in>unit-comparison.cpp</in>
+              <in>unit-concepts.cpp</in>
+              <in>unit-constructor1.cpp</in>
+              <in>unit-constructor2.cpp</in>
+              <in>unit-convenience.cpp</in>
+              <in>unit-conversions.cpp</in>
+              <in>unit-deserialization.cpp</in>
+              <in>unit-element_access1.cpp</in>
+              <in>unit-element_access2.cpp</in>
+              <in>unit-inspection.cpp</in>
+              <in>unit-items.cpp</in>
+              <in>unit-iterators1.cpp</in>
+              <in>unit-iterators2.cpp</in>
+              <in>unit-json_patch.cpp</in>
+              <in>unit-json_pointer.cpp</in>
+              <in>unit-large_json.cpp</in>
+              <in>unit-merge_patch.cpp</in>
+              <in>unit-meta.cpp</in>
+              <in>unit-modifiers.cpp</in>
+              <in>unit-msgpack.cpp</in>
+              <in>unit-noexcept.cpp</in>
+              <in>unit-pointer_access.cpp</in>
+              <in>unit-readme.cpp</in>
+              <in>unit-reference_access.cpp</in>
+              <in>unit-regression.cpp</in>
+              <in>unit-serialization.cpp</in>
+              <in>unit-testsuites.cpp</in>
+              <in>unit-to_chars.cpp</in>
+              <in>unit-ubjson.cpp</in>
+              <in>unit-udt.cpp</in>
+              <in>unit-unicode.cpp</in>
+              <in>unit-wstring.cpp</in>
+              <in>unit.cpp</in>
+            </df>
+            <df name="thirdparty">
+              <df name="doctest">
+                <in>doctest.h</in>
+                <in>doctest_compatibility.h</in>
+              </df>
+              <df name="fastcov">
+              </df>
+              <df name="fifo_map">
+                <in>fifo_map.hpp</in>
+              </df>
+              <df name="Fuzzer">
+                <df name="afl">
+                  <in>afl_driver.cpp</in>
+                </df>
+                <df name="standalone">
+                  <in>StandaloneFuzzTargetMain.c</in>
+                </df>
+                <df name="test">
+                  <df name="no-coverage">
+                  </df>
+                  <df name="ubsan">
+                  </df>
+                  <df name="uninstrumented">
+                  </df>
+                  <df name="unit">
+                  </df>
+                  <in>AFLDriverTest.cpp</in>
+                  <in>AbsNegAndConstant64Test.cpp</in>
+                  <in>AbsNegAndConstantTest.cpp</in>
+                  <in>AccumulateAllocationsTest.cpp</in>
+                  <in>BufferOverflowOnInput.cpp</in>
+                  <in>CallerCalleeTest.cpp</in>
+                  <in>CounterTest.cpp</in>
+                  <in>CustomCrossOverTest.cpp</in>
+                  <in>CustomMutatorTest.cpp</in>
+                  <in>DSO1.cpp</in>
+                  <in>DSO2.cpp</in>
+                  <in>DSOTestExtra.cpp</in>
+                  <in>DSOTestMain.cpp</in>
+                  <in>DivTest.cpp</in>
+                  <in>EmptyTest.cpp</in>
+                  <in>FourIndependentBranchesTest.cpp</in>
+                  <in>FullCoverageSetTest.cpp</in>
+                  <in>FuzzerUnittest.cpp</in>
+                  <in>InitializeTest.cpp</in>
+                  <in>LeakTest.cpp</in>
+                  <in>LeakTimeoutTest.cpp</in>
+                  <in>LoadTest.cpp</in>
+                  <in>MemcmpTest.cpp</in>
+                  <in>NthRunCrashTest.cpp</in>
+                  <in>NullDerefOnEmptyTest.cpp</in>
+                  <in>NullDerefTest.cpp</in>
+                  <in>OneHugeAllocTest.cpp</in>
+                  <in>OutOfMemorySingleLargeMallocTest.cpp</in>
+                  <in>OutOfMemoryTest.cpp</in>
+                  <in>RepeatedBytesTest.cpp</in>
+                  <in>RepeatedMemcmp.cpp</in>
+                  <in>ShrinkControlFlowTest.cpp</in>
+                  <in>ShrinkValueProfileTest.cpp</in>
+                  <in>SignedIntOverflowTest.cpp</in>
+                  <in>SimpleCmpTest.cpp</in>
+                  <in>SimpleDictionaryTest.cpp</in>
+                  <in>SimpleHashTest.cpp</in>
+                  <in>SimpleTest.cpp</in>
+                  <in>SimpleThreadedTest.cpp</in>
+                  <in>SingleMemcmpTest.cpp</in>
+                  <in>SingleStrcmpTest.cpp</in>
+                  <in>SingleStrncmpTest.cpp</in>
+                  <in>SpamyTest.cpp</in>
+                  <in>StrcmpTest.cpp</in>
+                  <in>StrncmpOOBTest.cpp</in>
+                  <in>StrncmpTest.cpp</in>
+                  <in>StrstrTest.cpp</in>
+                  <in>SwapCmpTest.cpp</in>
+                  <in>Switch2Test.cpp</in>
+                  <in>SwitchTest.cpp</in>
+                  <in>ThreadedLeakTest.cpp</in>
+                  <in>ThreadedTest.cpp</in>
+                  <in>TimeoutEmptyTest.cpp</in>
+                  <in>TimeoutTest.cpp</in>
+                  <in>TraceMallocTest.cpp</in>
+                  <in>UninstrumentedTest.cpp</in>
+                </df>
+                <in>FuzzerCorpus.h</in>
+                <in>FuzzerCrossOver.cpp</in>
+                <in>FuzzerDefs.h</in>
+                <in>FuzzerDictionary.h</in>
+                <in>FuzzerDriver.cpp</in>
+                <in>FuzzerExtFunctions.def</in>
+                <in>FuzzerExtFunctions.h</in>
+                <in>FuzzerExtFunctionsDlsym.cpp</in>
+                <in>FuzzerExtFunctionsWeak.cpp</in>
+                <in>FuzzerExtFunctionsWeakAlias.cpp</in>
+                <in>FuzzerFlags.def</in>
+                <in>FuzzerIO.cpp</in>
+                <in>FuzzerIO.h</in>
+                <in>FuzzerIOPosix.cpp</in>
+                <in>FuzzerIOWindows.cpp</in>
+                <in>FuzzerInterface.h</in>
+                <in>FuzzerInternal.h</in>
+                <in>FuzzerLoop.cpp</in>
+                <in>FuzzerMain.cpp</in>
+                <in>FuzzerMerge.cpp</in>
+                <in>FuzzerMerge.h</in>
+                <in>FuzzerMutate.cpp</in>
+                <in>FuzzerMutate.h</in>
+                <in>FuzzerOptions.h</in>
+                <in>FuzzerRandom.h</in>
+                <in>FuzzerSHA1.cpp</in>
+                <in>FuzzerSHA1.h</in>
+                <in>FuzzerTracePC.cpp</in>
+                <in>FuzzerTracePC.h</in>
+                <in>FuzzerTraceState.cpp</in>
+                <in>FuzzerUtil.cpp</in>
+                <in>FuzzerUtil.h</in>
+                <in>FuzzerUtilDarwin.cpp</in>
+                <in>FuzzerUtilLinux.cpp</in>
+                <in>FuzzerUtilPosix.cpp</in>
+                <in>FuzzerUtilWindows.cpp</in>
+                <in>FuzzerValueBitMap.h</in>
+              </df>
+              <df name="imapdl">
+              </df>
+            </df>
+          </df>
+          <df name="third_party">
+            <df name="amalgamate">
+            </df>
+            <df name="cpplint">
+            </df>
+          </df>
+        </df>
+        <df name="spdlog">
+          <df name="bench">
+            <in>async_bench.cpp</in>
+            <in>bench.cpp</in>
+            <in>formatter-bench.cpp</in>
+            <in>latency.cpp</in>
+            <in>utils.h</in>
+          </df>
+          <df name="cmake">
+          </df>
+          <df name="example">
+            <in>example.cpp</in>
+          </df>
+          <df name="include">
+            <df name="spdlog">
+              <df name="details">
+                <in>backtracer-inl.h</in>
+                <in>backtracer.h</in>
+                <in>circular_q.h</in>
+                <in>console_globals.h</in>
+                <in>file_helper-inl.h</in>
+                <in>file_helper.h</in>
+                <in>fmt_helper.h</in>
+                <in>log_msg-inl.h</in>
+                <in>log_msg.h</in>
+                <in>log_msg_buffer-inl.h</in>
+                <in>log_msg_buffer.h</in>
+                <in>mpmc_blocking_q.h</in>
+                <in>null_mutex.h</in>
+                <in>os-inl.h</in>
+                <in>os.h</in>
+                <in>pattern_formatter-inl.h</in>
+                <in>pattern_formatter.h</in>
+                <in>periodic_worker-inl.h</in>
+                <in>periodic_worker.h</in>
+                <in>registry-inl.h</in>
+                <in>registry.h</in>
+                <in>synchronous_factory.h</in>
+                <in>thread_pool-inl.h</in>
+                <in>thread_pool.h</in>
+              </df>
+              <df name="fmt">
+                <df name="bundled">
+                  <in>chrono.h</in>
+                  <in>color.h</in>
+                  <in>compile.h</in>
+                  <in>core.h</in>
+                  <in>format-inl.h</in>
+                  <in>format.h</in>
+                  <in>locale.h</in>
+                  <in>ostream.h</in>
+                  <in>posix.h</in>
+                  <in>printf.h</in>
+                  <in>ranges.h</in>
+                </df>
+                <in>bin_to_hex.h</in>
+                <in>fmt.h</in>
+                <in>ostr.h</in>
+              </df>
+              <df name="sinks">
+                <in>android_sink.h</in>
+                <in>ansicolor_sink-inl.h</in>
+                <in>ansicolor_sink.h</in>
+                <in>base_sink-inl.h</in>
+                <in>base_sink.h</in>
+                <in>basic_file_sink-inl.h</in>
+                <in>basic_file_sink.h</in>
+                <in>daily_file_sink.h</in>
+                <in>dist_sink.h</in>
+                <in>dup_filter_sink.h</in>
+                <in>msvc_sink.h</in>
+                <in>null_sink.h</in>
+                <in>ostream_sink.h</in>
+                <in>ringbuffer_sink.h</in>
+                <in>rotating_file_sink-inl.h</in>
+                <in>rotating_file_sink.h</in>
+                <in>sink-inl.h</in>
+                <in>sink.h</in>
+                <in>stdout_color_sinks-inl.h</in>
+                <in>stdout_color_sinks.h</in>
+                <in>stdout_sinks-inl.h</in>
+                <in>stdout_sinks.h</in>
+                <in>syslog_sink.h</in>
+                <in>systemd_sink.h</in>
+                <in>wincolor_sink-inl.h</in>
+                <in>wincolor_sink.h</in>
+              </df>
+              <in>async.h</in>
+              <in>async_logger-inl.h</in>
+              <in>async_logger.h</in>
+              <in>common-inl.h</in>
+              <in>common.h</in>
+              <in>formatter.h</in>
+              <in>logger-inl.h</in>
+              <in>logger.h</in>
+              <in>spdlog-inl.h</in>
+              <in>spdlog.h</in>
+              <in>tweakme.h</in>
+              <in>version.h</in>
+            </df>
+          </df>
+          <df name="scripts">
+          </df>
+          <df name="src">
+            <in>async.cpp</in>
+            <in>color_sinks.cpp</in>
+            <in>file_sinks.cpp</in>
+            <in>fmt.cpp</in>
+            <in>spdlog.cpp</in>
+            <in>stdout_sinks.cpp</in>
+          </df>
+          <df name="tests">
+            <in>catch.hpp</in>
+            <in>includes.h</in>
+            <in>main.cpp</in>
+            <in>test_async.cpp</in>
+            <in>test_backtrace.cpp</in>
+            <in>test_create_dir.cpp</in>
+            <in>test_daily_logger.cpp</in>
+            <in>test_dup_filter.cpp</in>
+            <in>test_errors.cpp</in>
+            <in>test_file_helper.cpp</in>
+            <in>test_file_logging.cpp</in>
+            <in>test_fmt_helper.cpp</in>
+            <in>test_macros.cpp</in>
+            <in>test_misc.cpp</in>
+            <in>test_mpmc_q.cpp</in>
+            <in>test_pattern_formatter.cpp</in>
+            <in>test_registry.cpp</in>
+            <in>test_sink.h</in>
+            <in>test_stdout_api.cpp</in>
+            <in>test_systemd.cpp</in>
+            <in>utils.cpp</in>
+            <in>utils.h</in>
+          </df>
+        </df>
+      </df>
+      <df name="res">
+      </df>
+      <df name="src">
+        <in>DataHandling.cpp</in>
+        <in>Log.cpp</in>
+        <in>Settings.cpp</in>
+        <in>Usb.cpp</in>
+        <in>UsbDevice.cpp</in>
+        <in>main.cpp</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>build/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>pi@192.168.0.16:22</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>build</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
