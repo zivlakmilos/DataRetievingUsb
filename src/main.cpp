@@ -82,7 +82,7 @@ static void daemonize()
 
 int main(int argc, char *argv[])
 {
-    //daemonize();
+    daemonize();
 
     LOG_INFO("---------------------------------------------------------------");
     LOG_INFO("Service start");
@@ -94,6 +94,8 @@ int main(int argc, char *argv[])
     dh.uploadLocalFiles();
 
     g_running = true;
+
+    std::chrono::steady_clock::time_point lastUploadTime = std::chrono::steady_clock::now();
 
     while (g_running)
     {
@@ -113,7 +115,18 @@ int main(int argc, char *argv[])
                 continue;
             }
 
-            if (!device.mount(mountPoint))
+            bool success = false;
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (device.mount(mountPoint))
+                {
+                    success = true;
+                    break;
+                }
+            }
+
+            if (!success)
             {
                 LOG_WARN("Failed to mount device: {0}", device.getDevNode());
                 continue;
@@ -123,10 +136,17 @@ int main(int argc, char *argv[])
 
             dh.fileCopy();
 
-            device.umount();
+            while (!device.umount());
+            LOG_INFO("Device unmounted: {0} -> {1}", device.getDevNode(), mountPoint);
         }
 
-        dh.uploadLocalFiles();
+        std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
+        if (std::chrono::duration_cast<std::chrono::seconds>(currentTime - lastUploadTime).count() >= 30)
+        {
+            dh.uploadLocalFiles();
+            //lastUploadTime = currentTime;
+            break;
+        }
 
         using namespace std::chrono_literals;
         std::this_thread::sleep_for(1000ms);

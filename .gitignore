@@ -4,3 +4,6 @@ build/
 # KDevelop
 *.kdev4
 .kdev4/
+
+# Netbeans
+nbproject/

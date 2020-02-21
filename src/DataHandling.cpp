@@ -84,7 +84,7 @@ bool DataHandling::fileCopy(void)
 
         std::string deviceId = "0";
 
-        std::string oFileName = localFilePath + "/DB" + deviceId + currentTime + ".txt";
+        std::string oFileName = localFilePath + "/DB" + deviceId + " " + currentTime + ".txt";
         std::ofstream oFile(oFileName);
 
         if (!oFile.is_open())
@@ -105,6 +105,8 @@ bool DataHandling::fileCopy(void)
         iFile.close();
 
         std::remove(iFileName.c_str());
+
+        LOG_ERROR("File copied: {0} -> {1}", iFileName, oFileName);
     }
 
     return true;
